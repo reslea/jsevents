@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
-  <title>Events</title>
-</head>
-<body>
-  <div id="squares">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Events</title>
+  </head>
+  <body>
+    <div id="squares"></div>
 
-  </div>
-  
-  <h3>Products</h3>
-  <div id="products">
-    <!-- <article class="product" data-id="1">
+    <h3>Products</h3>
+    <div id="products">
+      <!-- <article class="product" data-id="1">
       <h4>${product.name}</h4>
       <span>${product.price}</span>
       <div>
         <button>Buy</button>
       </div>
     </article> -->
-  </div>
+    </div>
 
-  <h3>Basket</h3>
-  <section id="basket">
-    <!-- <article class="basket-item" data-id="1">
+    <h3>Basket</h3>
+    <section id="basket">
+      <!-- <article class="basket-item" data-id="1">
       <h3>Notebook</h3>
       <span>price: <b>200</b></span>
       <label>
@@ -35,22 +33,22 @@
       <span>total: <em><b>400</b></em></span>
       <button>❌</button>
     </article> -->
-    <span id="total-price">Total price: <b>0</b></span>
-  </section>
-  <!-- <button id="buy">Buy</button> -->
-</body>
-<script>
-  const button = document.querySelector('#buy');
-  const squares = document.querySelector('#squares');
+      <span id="total-price">Total price: <b>0</b></span>
+    </section>
+    <!-- <button id="buy">Buy</button> -->
+  </body>
+  <script>
+    const button = document.querySelector("#buy");
+    const squares = document.querySelector("#squares");
 
-  button.addEventListener('click', function() {
-    const newBlock = document.createElement('div');
-    newBlock.style.width = '100px';
-    newBlock.style.height = '100px';
-    newBlock.textContent = 'new';
+    button.addEventListener("click", function () {
+      const newBlock = document.createElement("div");
+      newBlock.style.width = "100px";
+      newBlock.style.height = "100px";
+      newBlock.textContent = "new";
 
-    squares.appendChild(newBlock);
-  });
-</script>
-<script src="index.js"></script>
+      squares.appendChild(newBlock);
+    });
+  </script>
+  <script src="index.js"></script>
 </html>
